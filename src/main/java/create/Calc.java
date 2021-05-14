@@ -2,11 +2,11 @@ package create;
 
 import java.io.IOException;
 
-import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 
 @WebServlet(name="Calc", urlPatterns="/JavaPDF") //связывание сервлета с URL
 public class Calc extends HttpServlet {
@@ -26,7 +26,7 @@ public class Calc extends HttpServlet {
 		CreatePDF PDF = new CreatePDF();
 		String goals = "Hello";
 		PDF.Create(goals);
-		
+		   
 	}
 	
 	private static class RequestCalc {
